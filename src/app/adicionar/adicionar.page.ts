@@ -32,5 +32,15 @@ export class AdicionarPage implements OnInit {
     await alertPix.present();
   }
 
+  async alertTransferencia() {
+    const alertTransferencia = await this.alerta.create({
+      header: 'Transferência Banária',
+      message: 'Para adicionar saldo através de transferência envie os valores para a conta:\n Agencia:0000\n Conta:000000-0\n Banco:000\n CPF:000.000.000-00',
+      buttons: ['OK']
+    });
+
+    await alertTransferencia.present();
+  }
+
   
 }

@@ -13,14 +13,19 @@ export class RemoverPage implements OnInit {
   ngOnInit() {
   }
 
-  async presentAlert() {
+  public valor;
+
+  async retirarAlert() {
     const alert = await this.alerta.create({
-      header: 'Alert',
-      subHeader: 'Subtitle',
-      message: 'This is an alert message.',
-      buttons: ['OK', 'cancelar']
+      header: 'Sucesso!',
+      message: 'Os valores serão enviados para a sua conta.',
+      buttons: ['OK']
     });
 
     await alert.present();
+  }
+
+  submit(){
+    console.log(this.valor)
   }
 }

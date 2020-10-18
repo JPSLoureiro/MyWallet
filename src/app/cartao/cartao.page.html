@@ -4,8 +4,41 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
 
-  
-  <ion-button (click)="close()">cancelar</ion-button>
+  <ion-item>
+    <ion-label position="floating">Digite o número do cartão</ion-label>
+    <ion-input type="number" name="numero" [(ngModel)]="numero" placeholder="0000 0000 0000 0000"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Nome impresso</ion-label>
+    <ion-input type="text" name="nome" [(ngModel)]="nome" placeholder="Nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Data de vencimento</ion-label>
+    <ion-input type="date" name="data" [(ngModel)]="data" placeholder="MM/YY"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Código de segurança</ion-label>
+    <ion-input type="number" name="codigo" [(ngModel)]="codigo" placeholder="000"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Valor que deseja adicionar na conta</ion-label>
+    <ion-input type="number" name="valor" [(ngModel)]="valor" placeholder="0,00"><h7>R$</h7></ion-input>
+  </ion-item>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="submit()" (click)="alertAdiciona()" (click)="close()" routerLink="/home/inicio">confirmar</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="close()">cancelar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
