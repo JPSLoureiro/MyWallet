@@ -9,7 +9,7 @@ export class HomePage {
 
   constructor() {}
 
-  public saldoAtual = 10000;
+  
 
   
 }

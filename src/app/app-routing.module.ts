@@ -8,12 +8,20 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'home/inicio',
     pathMatch: 'full'
   },
   {
     path: 'adicionar',
     loadChildren: () => import('./adicionar/adicionar.module').then( m => m.AdicionarPageModule)
+  },
+  {
+    path: 'remover',
+    loadChildren: () => import('./remover/remover.module').then( m => m.RemoverPageModule)
+  },
+  {
+    path: 'cartao',
+    loadChildren: () => import('./cartao/cartao.module').then( m => m.CartaoPageModule)
   },
 ];
 
