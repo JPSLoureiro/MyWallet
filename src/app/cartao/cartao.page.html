@@ -18,7 +18,7 @@
 
   <ion-item>
     <ion-label position="floating">Data de vencimento</ion-label>
-    <ion-input type="date" name="data" [(ngModel)]="data" placeholder="MM/YY"></ion-input>
+    <ion-input type="number" name="data" [(ngModel)]="data" placeholder="MM/YY"></ion-input>
   </ion-item>
 
   <ion-item>
@@ -34,10 +34,10 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-button (click)="submit()" (click)="alertAdiciona()" (click)="close()" routerLink="/home/inicio">confirmar</ion-button>
+        <ion-button color="success" (click)="submit()" (click)="alertAdiciona()" (click)="close()" routerLink="/home/inicio">confirmar</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button (click)="close()">cancelar</ion-button>
+        <ion-button color="danger" (click)="close()">cancelar</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

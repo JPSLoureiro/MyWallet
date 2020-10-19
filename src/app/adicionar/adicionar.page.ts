@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController, ModalController } from '@ionic/angular';
 import { CartaoPage } from '../cartao/cartao.page';
+import { TransferenciaPage } from './transferencia/transferencia.page';
 
 @Component({
   selector: 'app-adicionar',
@@ -22,10 +23,18 @@ export class AdicionarPage implements OnInit {
     modalCartao.present()
   }
 
+  async transferencia(){
+    const modalTransferencia = await this.modalctrl.create({
+      component: TransferenciaPage
+    });
+
+    modalTransferencia.present()
+  }
+
   async alertPix() {
     const alertPix = await this.alerta.create({
       header: 'Pix',
-      message: 'Adicionar saldo através do Pix estará disponível a partir de 16 de Novembro de 2020',
+      message: 'Adicionar saldo através do Pix estará disponível a partir do dia 16 de Novembro de 2020.',
       buttons: ['OK']
     });
 

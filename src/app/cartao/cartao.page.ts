@@ -24,17 +24,13 @@ export class CartaoPage implements OnInit {
   }
 
   submit(){
-    console.log(this.numero)
-    console.log(this.nome)
-    console.log(this.data)
-    console.log(this.codigo)
-    console.log(this.valor)
+    console.log(this.numero, this.nome, this.data, this.codigo, this.valor)
   }
 
   async alertAdiciona() {
     const alertAdiciona = await this.alerta.create({
       header: 'Sucesso!',
-      message: 'O valor será adicionado em sua conta em instantes',
+      message: 'O valor será adicionado em sua conta em instantes.',
       buttons: ['OK']
     });
 

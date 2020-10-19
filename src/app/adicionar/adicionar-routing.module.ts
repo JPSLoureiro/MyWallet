@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: AdicionarPage
+  },
+  {
+    path: 'transferencia',
+    loadChildren: () => import('./transferencia/transferencia.module').then( m => m.TransferenciaPageModule)
   }
 ];
 

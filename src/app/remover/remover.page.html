@@ -2,7 +2,7 @@
   <ion-toolbar color="danger">
     <ion-title>Retirar dinheiro</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/home//inicio"></ion-back-button>
+      <ion-back-button defaultHref="/home/inicio"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -10,10 +10,10 @@
 <ion-content class="ion-padding">
   <ion-text color="medium">O valor será enviado para a sua conta principal</ion-text>
   <p></p>
-  <ion-item>
+  <p><ion-item>
     <ion-label position="floating">Digite o valor que deseja retirar</ion-label>
     <ion-input type="number" name="valor" [(ngModel)]="valor" placeholder="0,00"><h7>R$</h7></ion-input>
-  </ion-item>
+  </ion-item></p>
 
-  <ion-button (click)="retirarAlert()" (click)="submit()" routerLink="/home/inicio">Retirar valor</ion-button>
+  <ion-button expand="block" color="success" (click)="retirarAlert()" (click)="submit()" routerLink="/home/inicio">Retirar valor</ion-button>
 </ion-content>

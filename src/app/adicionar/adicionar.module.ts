@@ -8,6 +8,8 @@ import { AdicionarPageRoutingModule } from './adicionar-routing.module';
 
 import { AdicionarPage } from './adicionar.page';
 import { CartaoPage } from '../cartao/cartao.page';
+import { TransferState } from '@angular/platform-browser';
+import { TransferenciaPage } from './transferencia/transferencia.page';
 
 @NgModule({
   imports: [
@@ -16,7 +18,7 @@ import { CartaoPage } from '../cartao/cartao.page';
     IonicModule,
     AdicionarPageRoutingModule
   ],
-  declarations: [AdicionarPage, CartaoPage],
-  entryComponents: [CartaoPage]
+  declarations: [AdicionarPage, CartaoPage, TransferenciaPage],
+  entryComponents: [CartaoPage, TransferenciaPage]
 })
 export class AdicionarPageModule {}
