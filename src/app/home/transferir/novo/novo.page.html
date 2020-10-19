@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Novo contato</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-text color="medium">Informe os dado da conta que deseja enviar os valores</ion-text>
+  <p></p>
+
+  <ion-item>
+    <ion-label position="floating">Agencia</ion-label>
+    <ion-input type="number" name="agencia" [(ngModel)]="agencia" placeholder="0000"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Conta</ion-label>
+    <ion-input type="number" name="conta" [(ngModel)]="conta" placeholder="000000-0"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Banco</ion-label>
+    <ion-input type="number" name="banco" [(ngModel)]="banco" placeholder="000"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">CPF</ion-label>
+    <ion-input type="number" name="cpf" [(ngModel)]="cpf" placeholder="000.000.000-00"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input type="text" name="nome" [(ngModel)]="nome" placeholder="Nome completo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Valor</ion-label>
+    <ion-input type="number" name="valor" [(ngModel)]="valor" placeholder="0,00"><h7>R$</h7></ion-input>
+  </ion-item>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="submit()" (click)="alertTransferencia()" (click)="close()" routerLink="/home/inicio">confirmar</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="close()">cancelar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

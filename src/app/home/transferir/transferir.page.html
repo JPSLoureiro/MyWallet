@@ -4,6 +4,21 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  
+<ion-content class="ion-padding">
+  <ion-text color="medium">Selecione uma das opções a seguir</ion-text>
+  <p><ion-tittle>Novo</ion-tittle></p>
+
+  <ion-item (click)="addContato()">
+    <ion-icon name="person-add-outline" slot="start"></ion-icon>
+    <ion-label>Transferir para novo contato</ion-label>
+  </ion-item>
+
+  <p><ion-text>Transferir para contato existente</ion-text></p>
+
+  <ion-list>
+    <ion-item>Josue José</ion-item>
+    <ion-item>João</ion-item>
+    <ion-item>Maria</ion-item>
+    <ion-item>Roberto</ion-item>
+  </ion-list>
 </ion-content>

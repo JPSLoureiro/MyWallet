@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { TransferirPageRoutingModule } from './transferir-routing.module';
 
 import { TransferirPage } from './transferir.page';
+import { NovoPage } from './novo/novo.page';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { TransferirPage } from './transferir.page';
     IonicModule,
     TransferirPageRoutingModule
   ],
-  declarations: [TransferirPage]
+  declarations: [TransferirPage, NovoPage],
+  entryComponents:[NovoPage]
 })
 export class TransferirPageModule {}
