@@ -12,6 +12,6 @@ export class InicioPage implements OnInit {
   ngOnInit() {
   }
 
-  public saldoAtual = 1000;
+  public saldoAtual = "1000,00";
 
 }
